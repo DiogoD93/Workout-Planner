@@ -2,6 +2,7 @@ import express from "express";
 import axios from "axios";
 import bodyParser from "body-parser";
 import pg from "pg";
+import env from "dotenv";
 
 
 const app = express();
@@ -24,6 +25,11 @@ db.connect();
 
 app.get("/", (req,res) => {
     res.render("index.ejs");
+});
+
+
+app.get("/home", (req,res) => {
+
 });
 
 
