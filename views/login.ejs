@@ -1,0 +1,22 @@
+<%- include('partials/header.ejs') %>
+
+<div class="form-signin w-100 m-auto container d-flex flex-column align-items-center">
+    <form data-np-autofill-form-type="login" data-np-checked="1" data-np-watching="1">
+        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+        <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" data-np-autofill-field-type="username" data-np-uid="aba1ccfc-f116-4265-a009-5ab33f34213c">
+            <label for="floatingInput">Email address</label>
+        </div>
+
+        <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" data-np-autofill-field-type="password" data-np-uid="4d83b59f-9279-4948-8e02-193082c99968">
+            <label for="floatingPassword">Password</label>
+        </div>
+
+        <button class="btn btn-primary w-100 py-2" type="submit">Log In</button>
+        <p class="mt-5 mb-3 text-body-secondary">© 2025</p>
+    </form>
+</div>
+
+<%- include('partials/footer.ejs') %>
